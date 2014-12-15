@@ -1,0 +1,84 @@
+<template name="dashboardLayout">
+  {{#globalLayout}}
+
+  <core-drawer-panel data-drawer-panel>
+
+    <!-- Drawer -->
+    <core-header-panel mode="waterfall" drawer>
+      <core-toolbar class="toolbar toolbar-dark">
+        <a class="header-logo" href="/">
+          <img src="/img/white-logo.png"/>
+        </a>
+      </core-toolbar>
+      <div layout vertical fit>
+        <core-menu class="nav">
+
+          <core-submenu label="Projects" icon="apps" active>
+            <a href="{{pathFor route='home'}}">
+              <paper-item data-action="switch-project">
+                <core-icon icon="chevron-right"></core-icon>
+                Project 1
+              </paper-item>
+            </a>
+            <a href="{{pathFor route='home'}}">
+              <paper-item data-action="switch-project">
+                <core-icon icon="chevron-right"></core-icon>
+                Project 2
+              </paper-item>
+            </a>
+          </core-submenu>
+
+          <a href="#">
+            <paper-item>
+              <core-icon icon="settings"></core-icon>
+              Settings
+            </paper-item>
+          </a>
+
+          <a href="http://google.com">
+            <paper-item>
+              <core-icon icon="editor:insert-drive-file"></core-icon>
+              Google External
+            </paper-item>
+          </a>
+
+          <paper-item data-action="sign-out">
+            <core-icon icon="exit-to-app"></core-icon>
+            Sign out
+          </paper-item>
+
+        </core-menu>
+
+        <div flex></div>
+
+        <core-menu class="">
+          <paper-item label="{{currentEmail}}" class="list-item current-user">
+          </paper-item>
+        </core-menu>
+      </div>
+    </core-header-panel>
+
+    <!-- Main Content -->
+    <core-header-panel mode="waterfall" main>
+      <core-toolbar class="toolbar toolbar-primary">
+        {{#if narrow}}
+        <paper-icon-button icon="menu" data-action="toggle-drawer">
+        </paper-icon-button>
+        {{/if}}
+        {{> yield "contentToolbar"}}
+      </core-toolbar>
+
+      <div class="content">
+        {{#if UI.contentBlock}}
+        {{> UI.contentBlock}}
+        {{else}}
+        {{> yield}}
+        {{/if}}
+      </div>
+    </core-header-panel>
+
+  </core-drawer-panel>
+
+  {{/globalLayout}}
+
+</template>

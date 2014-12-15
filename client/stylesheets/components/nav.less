@@ -1,0 +1,59 @@
+@import '../import';
+
+// Nav // -----------------------------------
+
+.nav paper-item {
+  color: @color-black;
+}
+
+.nav paper-item @{deep} .button-content {
+  padding-left: 5px;
+}
+
+.nav paper-item @{deep} core-icon {
+  color: @color-black;
+  margin-right: 32px;
+}
+.nav .is-active,
+.nav .is-active @{deep} core-icon {
+  color: @color-accent;
+}
+.nav core-submenu @{deep} #icon {
+  color: @color-black;
+  margin-right: 32px;
+}
+.nav core-submenu @{deep} #label {
+  .type-subhead();
+}
+.nav core-submenu @{deep} #submenu {
+  margin: 0 0 0 20px;
+}
+.nav core-submenu @{deep} paper-item,
+.nav core-submenu @{deep} paper-item core-icon {
+  color: @color-black-light;
+}
+
+  // SAFARI & iOS
+
+.nav paper-item core-icon {
+  color: @color-black-light;
+  margin-right: 32px;
+}
+.nav .is-active,
+.nav .is-active core-icon {
+  color: @color-accent;
+}
+.nav core-submenu #icon {
+  color: @color-black;
+  margin-right: 32px;
+}
+.nav core-submenu #label {
+  .type-subhead();
+}
+.nav core-submenu #submenu {
+  margin: 0 0 0 20px;
+}
+.nav core-submenu paper-item,
+.nav core-submenu paper-item core-icon {
+  color: @color-black-light;
+}

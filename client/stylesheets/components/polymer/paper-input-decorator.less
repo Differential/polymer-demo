@@ -1,0 +1,266 @@
+@import '../../import';
+
+
+// Paper Inputs // -----------------------------------
+html @{deep} {
+  paper-input-decorator {
+    text-align: left;
+  }
+  paper-input-decorator @{deep} .floated-label span {
+    .type-size-caption();
+    line-height: 1;
+  }
+  paper-input-decorator @{deep} span#labelText {
+    .type-size-subhead();
+  }
+}
+
+  // Safari
+paper-input-decorator .floated-label span {
+  .type-size-caption();
+  line-height: 1;
+}
+paper-input-decorator span#labelText {
+  .type-size-subhead();
+}
+
+
+// Light Theme // -----------------------------------
+
+/* Webkit autofill styles */
+html @{deep} {
+  .input-light @{deep} input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px @color-primary inset;
+    -webkit-text-fill-color: @color-white;
+  }
+
+  .input-light @{deep} input:-webkit-autofill:focus {
+    -webkit-box-shadow:0 0 0 50px @color-primary inset;
+    -webkit-text-fill-color: @color-white;
+  }
+
+  .input-light @{deep} input.invalid,
+  .input-light @{deep} textarea.invalid {
+    box-shadow: 0 0 0 50px @color-primary inset;
+  }
+}
+
+html @{deep} {
+  // Inline label, floating label, error message and error icon color when the input is unfocused
+  paper-input-decorator.input-light @{deep} .label-text,
+  paper-input-decorator.input-light @{deep} .error {
+    color: @color-white;
+    .type-size-caption();
+  }
+
+  // Input value color
+  paper-input-decorator.input-light @{deep} input,
+  paper-input-decorator.input-light @{deep} textarea {
+    color: @color-white;
+  }
+  // Line color when input is unfocused
+  paper-input-decorator.input-light @{deep} .unfocused-underline {
+    background-color: @color-white;
+    border-bottom-color: @color-white;
+  }
+  // Float label color when input has focus
+  paper-input-decorator.input-light[focused] @{deep} .floated-label #floatedLabelText{
+      color: @color-accent-light;
+  }
+  // Line and cursor color when input has focus
+  paper-input-decorator.input-light @{deep} .focused-underline,
+  paper-input-decorator.input-light @{deep} .cursor {
+      background-color: @color-accent-light;
+  }
+  // Error text, icon and floated label when input is invalid
+  paper-input-decorator.input-light.invalid @{deep} .floated-label #floatedLabelText,
+  paper-input-decorator.input-light.invalid[focused] @{deep} .floated-label #floatedLabelText,
+  paper-input-decorator.input-light @{deep} .error-text,
+  paper-input-decorator.input-light @{deep} .error-icon {
+      color: @color-white;
+  }
+  // Line and cursor color when input is invalid
+  paper-input-decorator.input-light.invalid @{deep} .focused-underline,
+  paper-input-decorator.input-light.invalid @{deep} .cursor {
+      background-color: @color-white;
+  }
+  // Platform specific rules for placeholder text
+  paper-input-decorator.input-light @{deep} input::-webkit-input-placeholder {
+    color: @color-white;
+    .type-size-subhead();
+  }
+  paper-input-decorator.input-light @{deep} input::-moz-placeholder {
+    color: @color-white;
+    .type-size-subhead();
+  }
+  paper-input-decorator.input-light @{deep} input:-ms-input-placeholder {
+    color: @color-white;
+    .type-size-subhead();
+  }
+}
+
+
+// Light Theme SAFARI & iOS // -----------------------------------
+// Inline label, floating label, error message and error icon color when the input is unfocused
+paper-input-decorator.input-light .label-text,
+paper-input-decorator.input-light .error {
+  color: @color-white;
+  .type-size-caption();
+}
+
+// Input value color
+paper-input-decorator.input-light input,
+paper-input-decorator.input-light textarea {
+  color: @color-white;
+}
+// Line color when input is unfocused
+paper-input-decorator.input-light .unfocused-underline {
+  background-color: @color-white;
+  border-bottom-color: @color-white;
+}
+// Float label color when input has focus
+paper-input-decorator.input-light[focused] .floated-label #floatedLabelText{
+    color: @color-accent-light;
+}
+// Line and cursor color when input has focus
+paper-input-decorator.input-light .focused-underline,
+paper-input-decorator.input-light .cursor {
+    background-color: @color-accent-light;
+}
+// Error text, icon and floated label when input is invalid
+paper-input-decorator.input-light.invalid .floated-label #floatedLabelText,
+paper-input-decorator.input-light.invalid[focused] .floated-label #floatedLabelText,
+paper-input-decorator.input-light .error-text,
+paper-input-decorator.input-light .error-icon {
+    color: @color-white;
+}
+// Line and cursor color when input is invalid
+paper-input-decorator.input-light.invalid .focused-underline,
+paper-input-decorator.input-light.invalid .cursor {
+    background-color: @color-white;
+}
+// Platform specific rules for placeholder text
+paper-input-decorator.input-light input::-webkit-input-placeholder {
+  color: @color-white;
+  .type-size-subhead();
+}
+paper-input-decorator.input-light input::-moz-placeholder {
+  color: @color-white;
+  .type-size-subhead();
+}
+paper-input-decorator.input-light input:-ms-input-placeholder {
+  color: @color-white;
+  .type-size-subhead();
+}
+
+
+
+
+
+// Dark Theme // -----------------------------------
+
+html @{deep} {
+  // Inline label, floating label, error message and error icon color when the input is unfocused
+  paper-input-decorator.input-dark @{deep} .label-text,
+  paper-input-decorator.input-dark @{deep} .error {
+    color: @color-black-light;
+    .type-size-caption();
+  }
+
+  // Input value color
+  paper-input-decorator.input-dark @{deep} input,
+  paper-input-decorator.input-dark @{deep} textarea {
+    color: @color-primary;
+  }
+  // Line color when input is unfocused
+  paper-input-decorator.input-dark @{deep} .unfocused-underline {
+    background-color: @color-black-light;
+    border-bottom-color: @color-black-light;
+  }
+  // Float label color when input has focus
+  paper-input-decorator.input-dark[focused] @{deep} .floated-label #floatedLabelText{
+      color: @color-primary;
+  }
+  // Line and cursor color when input has focus
+  paper-input-decorator.input-dark @{deep} .focused-underline,
+  paper-input-decorator.input-dark @{deep} .cursor {
+      background-color: @color-primary;
+  }
+  // Error text, icon and floated label when input is invalid
+  paper-input-decorator.input-dark.invalid @{deep} .floated-label #floatedLabelText,
+  paper-input-decorator.input-dark.invalid[focused] @{deep} .floated-label #floatedLabelText,
+  paper-input-decorator.input-dark @{deep} .error-text,
+  paper-input-decorator.input-dark @{deep} .error-icon {
+      color: @color-error;
+  }
+  // Line and cursor color when input is invalid
+  paper-input-decorator.input-dark.invalid @{deep} .focused-underline,
+  paper-input-decorator.input-dark.invalid @{deep} .cursor {
+      background-color: @color-error;
+  }
+  // Platform specific rules for placeholder text
+  paper-input-decorator.input-dark @{deep} input::-webkit-input-placeholder {
+    color: @color-black-light;
+    .type-size-subhead();
+  }
+  paper-input-decorator.input-dark @{deep} input::-moz-placeholder {
+    color: @color-black-light;
+    .type-size-subhead();
+  }
+  paper-input-decorator.input-dark @{deep} input:-ms-input-placeholder {
+    color: @color-black-light;
+    .type-size-subhead();
+  }
+}
+
+// // Dark Theme SAFARI & iOS // -----------------------------------
+// Inline label, floating label, error message and error icon color when the input is unfocused
+paper-input-decorator.input-dark .label-text,
+paper-input-decorator.input-dark .error {
+  color: @color-black-light;
+  .type-size-caption();
+}
+// Input value color
+paper-input-decorator.input-dark input,
+paper-input-decorator.input-dark textarea {
+  color: @color-primary;
+}
+// Line color when input is unfocused
+paper-input-decorator.input-dark .unfocused-underline {
+  background-color: @color-black-light;
+  border-bottom-color: @color-black-light;
+}
+// Float label color when input has focus
+paper-input-decorator.input-dark[focused] .floated-label #floatedLabelText{
+    color: @color-primary;
+}
+// Line and cursor color when input has focus
+paper-input-decorator.input-dark .focused-underline,
+paper-input-decorator.input-dark .cursor {
+    background-color: @color-primary;
+}
+// Error text, icon and floated label when input is invalid
+paper-input-decorator.input-dark.invalid .floated-label #floatedLabelText,
+paper-input-decorator.input-dark.invalid[focused] .floated-label #floatedLabelText,
+paper-input-decorator.input-dark .error-text,
+paper-input-decorator.input-dark .error-icon {
+    color: @color-error;
+}
+// Line and cursor color when input is invalid
+paper-input-decorator.input-dark.invalid .focused-underline,
+paper-input-decorator.input-dark.invalid .cursor {
+    background-color: @color-error;
+}
+// Platform specific rules for placeholder text
+paper-input-decorator.input-dark input::-webkit-input-placeholder {
+  color: @color-black-light;
+  .type-size-subhead();
+}
+paper-input-decorator.input-dark input::-moz-placeholder {
+  color: @color-black-light;
+  .type-size-subhead();
+}
+paper-input-decorator.input-dark input:-ms-input-placeholder {
+  color: @color-black-light;
+  .type-size-subhead();
+}

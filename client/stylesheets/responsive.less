@@ -1,0 +1,52 @@
+// Responsive Classes & Variables
+
+
+// Responsive Media Queries // -----------------------------------
+
+@xs: ~"(max-width: 767px)";
+@sm: ~"(min-width: 768px)";
+@md: ~"(min-width: 992px)";
+@lg: ~"(min-width: 1200px)";
+
+
+// Responsive Keyline Bases // -----------------------------------
+
+@keyline-xs: 48px;
+@keyline-sm: 56px;
+@keyline-md: 64px;
+
+
+// Responsive Classes // -----------------------------------
+
+.visible-xs {
+  display: block;
+  @media @sm { display: none; }
+}
+.visible-sm {
+  display: none;
+  @media @sm { display: block; }
+}
+.visible-md {
+  display:none;
+  @media @md { display: block; }
+}
+.visible-lg {
+  display: none;
+  @media @lg { display: block; }
+}
+.hidden-xs {
+  display: none;
+  @media @sm { display: block; }
+}
+.hidden-sm {
+  display: block;
+  @media @sm { display: none; }
+}
+.hidden-md {
+  display: block;
+  @media @md { display: none; }
+}
+.hidden-lg {
+  display: block;
+  @media @lg { display: none; }
+}

@@ -1,0 +1,39 @@
+@import '../import';
+
+// Billboard // -----------------------------------
+
+.public-billboard {
+  width: 100%;
+  height: 375px;
+  background: @color-primary-darkest;
+  color: @color-white;
+  text-align: center;
+
+  @media @sm {
+    padding-top: 58%;
+    height: auto;
+    background-position: center;
+  }
+  @media @md {
+    padding-top: 35%;
+  }
+}
+.public-billboard h1 {
+  .type-size-headline();
+  font-weight: 700;
+  margin-bottom: 48px;
+  @media @sm { .type-size-display-large(); }
+}
+.public-billboard p {
+  .type-size-headline();
+  max-width: 720px;
+  margin-bottom: 48px;
+  @media @xs { .type-size-subhead(); }
+}
+.public-billboard-container {
+  background-image: url('/img/billboard-bg-chart.png');
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 16px;
+}

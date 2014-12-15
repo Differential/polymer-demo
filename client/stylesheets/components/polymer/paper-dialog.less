@@ -1,0 +1,64 @@
+@import '../../import';
+
+html @{deep} paper-dialog,
+html @{deep} paper-action-dialog {
+  background-color: @color-bg-grey-darkest;
+}
+
+html paper-dialog,
+html paper-action-dialog {
+  background-color: @color-bg-grey-darkest;
+}
+
+html @{deep} paper-dialog @{deep} #scroller,
+html @{deep} paper-action-dialog @{deep} #scroller{
+  overflow: visible;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+html paper-dialog #scroller,
+html paper-action-dialog #scroller{
+  overflow: visible;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+html @{deep} paper-action-dialog @{deep} di-button,
+html @{deep} paper-action-dialog @{deep} paper-button, {
+  color: @color-primary-dark;
+}
+
+html paper-action-dialog di-button,
+html paper-action-dialog paper-button, {
+  color: @color-primary-dark;
+}
+
+
+// Check paper-dialog comments, maybe set size on scroller? keep overflows?
+
+.global-dialog() {
+  width: 45%;
+  height: auto;
+  border-radius: 3px;
+
+  @media @xs {
+    width: 80%;
+  }
+
+  &.full-on-mobile {
+    @media @xs {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+    }
+  }
+}
+
+html @{deep} [global-dialog] {
+  .global-dialog();
+}
+
+html [global-dialog] {
+  .global-dialog();
+}

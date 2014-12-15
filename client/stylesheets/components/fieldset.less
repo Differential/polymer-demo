@@ -1,0 +1,22 @@
+@import '../import';
+
+fieldset {
+  border: none;
+  background: #eee;
+  position:relative;
+  margin: 10px;
+  padding-top: 20px;
+
+  legend {
+    top:0px;
+    position:absolute;
+  }
+
+  @{deep} .control {
+    margin-left: 0 !important;
+  }
+
+  .control {
+    margin-left: 0 !important;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../import';
+
+.dropdown-dark() {
+  color: @color-white;
+
+  &::shadow {
+    #ripple, #background {
+      background-color: @color-primary;
+    }
+  }
+
+  #ripple, #background {
+    background-color: @color-primary;
+  }
+
+  .core-selected {
+    background-color: @color-primary-darkest;
+  }
+}
+
+
+paper-dropdown.dropdown-dark {
+  .dropdown-dark();
+}

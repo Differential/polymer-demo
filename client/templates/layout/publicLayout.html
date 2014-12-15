@@ -1,0 +1,9 @@
+<template name="publicLayout">
+  {{#globalLayout}}
+    <core-header-panel flex mode="scroll">
+      {{> publicHeader}}
+      {{> yield}}
+      {{> yield "footer"}}
+    </core-header-panel>
+  {{/globalLayout}}
+</template>

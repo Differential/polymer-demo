@@ -1,0 +1,26 @@
+<template name="signUp">
+
+  <div class="entry" fit layout vertical center center-justified slide-from-right>
+    <div class="entry-body">
+
+      <di-form data-action="sign-up">
+
+        <paper-input-decorator label="Email Address" error="We need a valid email!"
+          floatingLabel class="input-light">
+          <input is="core-input" id="email" type="email" required>
+        </paper-input-decorator>
+
+        <paper-input-decorator label="Password" error="You need a password!"
+          floatingLabel class="input-light">
+          <input is="core-input" id="password" type="password" required>
+        </paper-input-decorator>
+
+        <div horizontal layout reverse>
+          <di-button class="btn btn-accent" type="submit" raised>Sign Up</di-button>
+        </div>
+
+      </di-form>
+
+    </div>
+  </div>
+</template>

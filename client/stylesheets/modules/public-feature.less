@@ -1,0 +1,38 @@
+@import '../import';
+
+// Public Feature // -----------------------------------
+
+.public-feature {
+  background: @color-bg-grey-dark;
+  .background-image(linear-gradient(to bottom, @color-bg-grey-darkest 0%,@color-bg-grey-dark 100%));
+  .background-size(cover, 100%);
+  padding: 64px 16px 0;
+  text-align: center;
+  @media @sm { padding-top: 72px; }
+}
+.public-feature h2 {
+  .type-headline();
+  margin-bottom: 32px;
+  @media @sm { .type-display(); }
+}
+.public-feature p {
+  .type-subhead();
+  color: @color-black-light;
+  max-width: 848px;
+  margin-bottom: 32px;
+}
+.public-feature-image {
+  max-width: 900px;
+  margin-top: 16px;
+  @media @sm { margin-top: 32px; }
+
+  img {display: block;}
+}
+.public-feature-title {
+  .type-headline();
+  font-weight: 500;
+  color: @color-black-lighter;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  @media @sm { margin-bottom: 72px; }
+}

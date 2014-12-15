@@ -1,0 +1,26 @@
+@import '../../import';
+@import 'paper-dropdown';
+
+paper-dropdown-menu.dropdown-menu-dark {
+  border-bottom: 1px solid @color-primary;
+
+  &::shadow {
+    #label, #arrow {
+      color: @color-white;
+    }
+  }
+
+  #label, #arrow {
+    color: @color-white;
+  }
+
+  paper-dropdown {
+    .dropdown-dark();
+  }
+}
+
+paper-dropdown-menu {
+  @media @xs {
+    font-size: 90%;
+  }
+}

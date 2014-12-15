@@ -1,0 +1,13 @@
+<template name="globalLayout">
+  {{> UI.contentBlock}}
+
+  <paper-action-dialog global-dialog layered backdrop
+    transition="paper-dialog-transition-bottom"
+    class={{#if globalDialogFullOnMobile}}full-on-mobile{{/if}}>
+    {{#if globalDialogTemplate}}
+      {{> UI.dynamic template=globalDialogTemplate data=globalDialogData}}
+    {{/if}}
+  </paper-action-dialog>
+
+  <paper-toast global-toast></paper-toast>
+</template>

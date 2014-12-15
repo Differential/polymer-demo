@@ -1,0 +1,46 @@
+// Signup & Signin Pages
+@import '../import';
+
+.entry {
+  background: @color-primary;
+  .background-image(radial-gradient(30% 40%, @color-bg-primary-gradient,@color-primary));
+  overflow: scroll;
+  color: @color-white-light;
+  padding: 0 16px;
+  // text-align: center;
+}
+.entry a {
+  color: @color-white-light;
+  border-bottom: 1px solid @color-white-light;
+  text-decoration: none;
+
+  &:hover {
+    color: @color-white;
+    border-bottom: 1px solid @color-white;
+  }
+}
+.entry .btn {
+  margin: 32px 0 16px;
+}
+.entry-body {
+  width: 100%;
+  max-width: 330px;
+}
+.entry-body h3 {
+  .type-subhead();
+  width: 288px;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+.entry-logo {
+  width: 150px;
+  display: block;
+  margin:  0 auto 20px;
+  @media @sm { width: 220px; }
+}
+.entry-close {
+  color: @color-white;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}

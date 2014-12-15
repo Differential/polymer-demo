@@ -1,0 +1,102 @@
+@import 'import.less';
+
+
+// Typography Sizes // -----------------------------------
+
+.type-size-display-jumbo()    { font-size: 112px; }
+.type-size-display-larger()   { font-size: 56px; }
+.type-size-display-large()    { font-size: 45px; }
+.type-size-display()          { font-size: 34px; }
+.type-size-headline()         { font-size: 24px; }
+.type-size-title()            { font-size: 20px; }
+.type-size-subhead()          { font-size: 16px; }
+.type-size-body()             { font-size: 14px; }
+.type-size-caption()          { font-size: 12px; }
+
+
+// Typography Colors // -----------------------------------
+
+.type-black { color: @color-black; }
+.type-black-light { color: @color-black-light; }
+.type-black-lighter { color: @color-black-lighter; }
+.type-black-lightest { color: @color-black-lightest; }
+
+.type-white { color: @color-white; }
+.type-white-light { color: @color-white-light; }
+.type-white-lighter { color: @color-white-lighter; }
+.type-white-lightest { color: @color-white-lightest; }
+
+
+// Typography Styles // -----------------------------------
+
+.type-display-jumbo() {
+  .type-size-display-jumbo;
+  font-weight: 300;
+  letter-spacing: -.1px;
+}
+.type-display-larger() {
+  .type-size-display-larger;
+  font-weight: 400;
+  letter-spacing: -.05px;
+}
+.type-display-large() {
+  .type-size-display-large;
+  line-height: 1.067;
+  font-weight: 400;
+}
+.type-display() {
+  .type-size-display;
+  line-height: 1.176;
+  font-weight: 400;
+}
+.type-headline() {
+  .type-size-headline;
+  line-height: 1.333;
+  font-weight: 400;
+}
+.type-title() {
+  .type-size-title;
+  font-weight: 500;
+  letter-spacing: .05px;
+}
+.type-subhead-loose() {
+  .type-size-subhead;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: .1px;
+}
+.type-subhead() {
+  .type-size-subhead;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: .1px;
+}
+.type-body-strong() {
+  .type-size-body;
+  line-height: 1.429;
+  font-weight: 500;
+  letter-spacing: .1px;
+}
+.type-body-loose() {
+  .type-size-body;
+  line-height: 1.714;
+  font-weight: 400;
+  letter-spacing: .1px;
+}
+.type-body() {
+  .type-size-body;
+  line-height: 1.429;
+  font-weight: 400;
+  letter-spacing: .1px;
+}
+.type-caption() {
+  .type-size-caption;
+  font-weight: 400;
+  letter-spacing: .2px;
+}
+.type-button() {
+  .type-size-body;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .1px;
+}

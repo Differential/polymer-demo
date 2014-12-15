@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="283px" viewBox="0 0 1440 283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>gray chart 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="gray-background" sketch:type="MSArtboardGroup" transform="translate(0.000000, -2929.000000)">
+            <g id="gray-chart-2" sketch:type="MSLayerGroup" transform="translate(-90.000000, 2912.000000)">
+                <path d="M46,261 L310,195 L612,201 L857,184 L1081,132 L1308,132 L1563,0 L1571,300 L12,300 L46,261 Z" id="Path-129" fill="#D1D1D1" sketch:type="MSShapeGroup"></path>
+                <path d="M310,195 L610,300 L-1.11022302e-16,300 L45,259 L310,195 Z" id="Path-130" fill="#EDEDED" sketch:type="MSShapeGroup"></path>
+                <path d="M619,200 C619,200 1055,300 1071,300 L1530,300 L863,183 L619,200 Z" id="Path-131" fill="#DFDFDF" sketch:type="MSShapeGroup"></path>
+                <path d="M1082,132 C1082,132 1640,374 1798,341 C1956,308 1871,201 1871,201 L1678,189 L1308,132 L1082,132 Z" id="Path-132" fill="#ABABAB" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

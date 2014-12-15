@@ -1,0 +1,22 @@
+@import '../import';
+
+.list-wrapper {
+  // margin: 20px 10px;
+  margin: 20px 10px;
+}
+
+.list .list-item {
+  padding: 5px 15px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid @color-black-lightest;
+  }
+}
+
+.list .list-item @{deep} core-icon {
+  color: @color-black-lighter;
+}
+
+.list .list-item core-icon {
+  color: @color-black-lighter;
+}
