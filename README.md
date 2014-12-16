@@ -26,7 +26,7 @@ This is very important because it includes the web components polyfill.
 
 ### imports.html
 
-* This is where you list what Polymer components you want to load, from polymer core, paper-elements, and even your own custom components. We put these tags in a specific file `client/templates/layout/imports.html` which is then compiled with [Vulcanize](https://github.com/Polymer/vulcanize) and the (`differential-vulcanize`)[https://github.com/Differential/meteor-vulcanize] package to concatenate the web components into one file.
+* This is where you list what Polymer components you want to load, from polymer core, paper-elements, and even your own custom components. We put these tags in a specific file `client/templates/layout/imports.html` which is then compiled with [Vulcanize](https://github.com/Polymer/vulcanize) and the [`differential-vulcanize`](https://github.com/Differential/meteor-vulcanize) package to concatenate the web components into one file.
 
 * After running `bower install`, your components will placed into the `public/components` directory, which you can see in the `.bowerrc` file
 
