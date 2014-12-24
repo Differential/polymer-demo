@@ -21,6 +21,11 @@ Router.route "/sign-up",
   template: "signUp"
   controller: "PublicController"
 
+Router.route "/sign-out",
+  action: ->
+    Meteor.logout ->
+      Router.go "/"
+
 #
 # Dashboard Routes
 #
