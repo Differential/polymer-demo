@@ -7,6 +7,7 @@ meteor-platform
 less
 accounts-password
 iron:router
-differential:vulcanize
 coffeescript
 meteorhacks:inject-initial
+differential:vulcanize
+
