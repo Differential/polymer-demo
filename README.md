@@ -8,7 +8,6 @@
 2. From the root directory of the meteor app, run `bower install`
   - This will install Polymer, web components, & vulcanize
   - Also, includes some custom elements we made so you can see how that works
-  - Too lazy to completely remove the USERcycle branding :) PRs accepted.
 3. Start the Meteor server `meteor`
 4. WEB COMPONENTS!
 
