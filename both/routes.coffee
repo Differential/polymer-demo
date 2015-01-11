@@ -8,9 +8,6 @@
 Router.route "/about",
   controller: "PublicController"
 
-Router.route "/pricing",
-  controller: "PublicController"
-
 Router.route "/sign-in",
   name: "accounts.signIn"
   template: "signIn"
