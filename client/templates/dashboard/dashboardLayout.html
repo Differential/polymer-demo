@@ -65,10 +65,8 @@
     <!-- Main Content -->
     <core-header-panel mode="waterfall" main>
       <core-toolbar class="toolbar toolbar-primary">
-        {{#if narrow}}
-        <paper-icon-button icon="menu" data-action="toggle-drawer">
+        <paper-icon-button class="hidden-md narrow" icon="menu" data-action="toggle-drawer">
         </paper-icon-button>
-        {{/if}}
         {{> yield "contentToolbar"}}
       </core-toolbar>
 
