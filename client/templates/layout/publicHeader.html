@@ -1,7 +1,7 @@
 <template name="publicHeader">
   <core-toolbar class="toolbar toolbar-primary">
 
-  <paper-item class="toolbar-item">
+  <paper-item class="toolbar-item" data-action="home">
     <a href="/">Home</a>
   </paper-item>
 
@@ -27,19 +27,19 @@
 
 <template name="headerItems">
 
-  <paper-item class="toolbar-item">
+  <paper-item class="toolbar-item" data-action="about">
     <a href="{{pathFor route='about'}}">
       About
     </a>
   </paper-item>
 
-  <paper-item class="toolbar-item">
+  <paper-item class="toolbar-item" data-action="sign-up">
     <a href="{{pathFor route='accounts.signUp'}}">
       Sign Up
     </a>
   </paper-item>
 
-  <paper-item class="toolbar-item">
+  <paper-item class="toolbar-item" data-action="sign-in">
     <a href="{{pathFor route='accounts.signIn'}}">
       Sign In
     </a>

@@ -8,3 +8,5 @@ Template.home.rendered = ->
 Template.home.events =
   'click paper-button': (evt) ->
     console.log 'clicked: ', evt.target
+
+  

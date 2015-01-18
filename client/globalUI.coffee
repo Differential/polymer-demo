@@ -45,3 +45,12 @@ Template.globalLayout.events
       template: node.data("openDialog")
       data: if node.data("useContext")? then @
       fullOnMobile: node.data("fullOnMobile")
+
+  "click [data-action=sign-in]": (evt) ->
+    Router.go "accounts.signIn"
+
+  "click [data-action=sign-up]": (evt) ->
+    Router.go "accounts.signUp"
+
+  "click [data-action=about]": (evt) ->
+    Router.go "about"
