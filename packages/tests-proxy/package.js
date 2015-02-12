@@ -7,4 +7,5 @@ Package.describe({
 
 Package.on_use(function (api) {
 	api.use("coffeescript", ["client", "server"]);
+	api.add_files("tests/cucumber/fixtures.coffee",["server","client"]);
 });

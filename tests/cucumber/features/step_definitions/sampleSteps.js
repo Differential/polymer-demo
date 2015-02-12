@@ -23,9 +23,6 @@
     this.Then(/^I should see the headline of "([^"]*)"$/, function (expectedText, callback) {
 
       helper.world.browser.
-        execute(function(){
-          Session.set("polymer-ready", true);
-        }).
         getText('h1', function (err, text) {
           if (err) {
               callback.fail(err.message);
