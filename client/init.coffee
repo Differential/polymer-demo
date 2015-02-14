@@ -1,5 +1,5 @@
 # Manually initialize the router into a nested div
-polymerReady = new ReactiveVar false
+polymerReady = new Blaze.ReactiveVar false
 
 $(window).on "polymer-ready", ->
   polymerReady.set true
