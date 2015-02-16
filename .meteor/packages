@@ -11,3 +11,4 @@ coffeescript
 meteorhacks:inject-initial
 differential:vulcanize
 
+reactive-var
